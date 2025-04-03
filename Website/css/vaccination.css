@@ -1,0 +1,224 @@
+/* 
+variables 
+*/
+:root {
+  --main-color: #e6f1f7;
+  --text-color: #044973;
+  --button-color: #43d2ff;
+  --white: #fff;
+  --black: #000;
+  --border-color: #ccc;
+  --main-radius: 20px;
+  --circle-radius: 50%;
+  --main-transition: 0.3s;
+}
+/* 
+elements 
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', serif;
+}
+.container {
+  padding-inline: 50px;
+  margin-inline: 50px;
+}
+/* mobile */
+@media (max-width: 767px) {
+  .container {
+    padding-inline: 15px;
+    margin-inline: 15px;
+  }
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding-inline: 15px;
+    margin-inline: 15px;
+  }
+}
+.main-heading {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: bold;
+}
+.main-heading span {
+  color: var(--text-color);
+}
+/* 
+Section Vaccination 
+*/
+/* .vaccination-section {
+} */
+.vaccination-section .vaccination-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+/* mobile */
+@media (max-width: 767px) {
+  .vaccination-section .vaccination-content {
+    flex-direction: column-reverse;
+  }
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .vaccination-section .vaccination-content {
+    flex-direction: column-reverse;
+  }
+}
+.vaccination-section .vaccination-content .vaccination-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 40px;
+  flex-basis: 60%;
+  height: fit-content;
+  border-radius: var(--main-radius);
+}
+.vaccination-section .vaccination-content .vaccination-info h1,
+p {
+  font-weight: bold;
+  line-height: 1.6;
+}
+/* 
+sort by 
+*/
+article.sort-by {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* mobile */
+@media (max-width: 767px) {
+  article.sort-by {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  article.sort-by {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+article.sort-by p {
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+article.sort-by div.btns {
+  display: flex;
+  gap: 20px;
+}
+/* mobile */
+@media (max-width: 767px) {
+  article.sort-by div.btns {
+    flex-wrap: wrap;
+  }
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  article.sort-by div.btns {
+    flex-wrap: wrap;
+  }
+}
+article.sort-by .sort-btn {
+  padding: 12px 16px;
+  border-radius: 10px;
+  color: var(--text-color);
+  border: 2px solid;
+  outline: none;
+  background-color: transparent;
+  transition: var(--main-transition);
+}
+article.sort-by .sort-btn:hover {
+  background-color: var(--button-color);
+  border-color: var(--button-color);
+  color: var(--white);
+  transform: scale(1.1) translateY(-3px);
+}
+article.sort-by .btn-active {
+  background-color: var(--button-color);
+  border-color: var(--button-color);
+  color: var(--white);
+  transform: scale(1.1) translateY(-3px);
+}
+/*
+ vaccination tables 
+*/
+.vaccination-tables {
+  padding-block: 60px;
+  margin-block: 0 60px;
+}
+.vaccination-tables h1 {
+  color: var(--text-color);
+}
+.vaccination-tables .table-container {
+  margin-bottom: 50px;
+}
+/* mobile */
+@media (max-width: 767px) {
+  .vaccination-tables .table-container {
+    overflow-x: scroll;
+  }
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .vaccination-tables .table-container {
+    overflow-x: scroll;
+  }
+}
+.vaccination-tables .table-container table {
+  text-align: center;
+}
+/* mobile */
+@media (max-width: 767px) {
+  .vaccination-tables .table-container table {
+    overflow-x: scroll;
+    min-width: 100%;
+    table-layout: auto;
+  }
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .vaccination-tables .table-container table {
+    overflow-x: scroll;
+    min-width: 100%;
+    table-layout: auto;
+  }
+}
+.vaccination-tables .table-container table td {
+  padding: 15px;
+  background-color: var(--main-color);
+}
+.vaccination-tables .table-container table thead td {
+  background-color: var(--text-color);
+  color: var(--main-color);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsive Queries */
+/* mobile */
+@media (max-width: 767px) {
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/* laptop */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* Desktop */
+@media (min-width: 1200px) {
+}
