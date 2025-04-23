@@ -116,6 +116,50 @@ p {
 .our-clinic-section {
   padding-block: 50px;
 }
+.our-clinic-section > .our-clinic-main {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 60px;
+}
+/* mobile */
+@media (max-width: 767px) {
+  .our-clinic-section > .our-clinic-main {
+    gap: 30px;
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+  }
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .our-clinic-section > .our-clinic-main {
+    gap: 30px;
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+  }
+}
+.our-clinic-main > form {
+  position: relative;
+}
+.our-clinic-main > form > input {
+  padding: 10px 20px 10px 60px;
+  border-radius: var(--main-radius);
+  border: 1px solid var(--border-color);
+  outline: none;
+  width: 400px;
+}
+/* mobile */
+@media (max-width: 767px) {
+  .our-clinic-main > form > input {
+    width: 100%;
+  }
+}
+.our-clinic-main > form > div {
+  position: absolute;
+  top: 55%;
+  left: 22px;
+  transform: translateY(-50%);
+}
 .our-clinic-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
