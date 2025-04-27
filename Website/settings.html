@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <!-- Main css -->
+    <link rel="stylesheet" href="/css/settings.css">
+    <!-- Normalize Css -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- Start Navbar -->
+    <header>
+        <!-- Container -->
+        <div class="container">
+            <nav>
+                <!-- logo -->
+                <div class="logo">
+                    <img src="./Images/Logo.png" alt="logo img">
+                </div>
+                <div class="menu">
+                    <!-- links -->
+                    <ul class="menu-links">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="vaccination.html">Vaccination</a>
+                        </li>
+                        <li>
+                            <a href="consultation.html">Consultation</a>
+                        </li>
+                        <li>
+                            <a href="health-unit.html">Health Unit</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                        <button class="close-menu-btn">
+                            <!-- Close Btn -->
+                            <img src="./Images/Icons/close-btn-icon.svg" alt="close btn icon">
+                        </button>
+                    </ul>
+                    <!-- Mobile Menu -->
+                    <ul class="mobile-menu">
+                        <li>
+                            <button class="mobile-menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Icons -->
+                    <ul class="menu-icons">
+                        <!-- Notification -->
+                        <li>
+                            <a href="">
+                                <img src="./Images/Icons/mdi_bell-ring.svg" alt="notification img">
+                            </a>
+                        </li>
+                        <!-- Settings -->
+                        <li>
+                            <a href="./settings.html">
+                                <img src="./Images/Icons/weui_setting-filled.svg" alt="settings img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- overlay -->
+        <div class="overlay"></div>
+    </header>
+    <!-- End Navbar -->
+     <!-- Start Profile Section -->
+     <section class="profile-section">
+        <!-- Container -->
+        <div class="container">
+            <main>
+                <h1>
+                    Profile
+                </h1>
+            </main>
+            <!-- profile content -->
+            <div class="profile-content">
+                <!-- profile info -->
+                <div class="profile-info">
+                    <div class="image">
+                        <img src="./Images/Settings-avartar.png" alt="account avatar img">
+                    </div>
+                    <!-- Account info -->
+                    <div class="info">
+                        <h2>Mariam Mahmoud</h2>
+                        <p>mariam.mahmoud@gmail.com</p>
+                    </div>
+                </div>
+                <!-- profile settings -->
+                <div class="profile-settings">
+                    <main>
+                        <h1>Welcome, mariam</h1> 
+                        <p>Here you can manage your account, edit your account details, and access expert consultations.</p>
+                    </main>
+                    <!-- Account Config -->
+                    <aside class="account-config">
+                        <!-- account settings -->
+                        <div class="card" id="account-settings-opt">
+                            <img src="./Images/Icons/Settings/Account-settings.svg" alt="">
+                            <h5>Account Settings</h5>
+                        </div>
+                        <!-- Register child data -->
+                        <div class="card" id="register-child-data-opt">
+                            <img src="./Images/Icons/Settings/register-child-data-icon.svg" alt="">
+                            <h5>Register Child Data</h5>
+                        </div>
+                        <!-- compliant -->
+                        <div class="card" id="complaint-opt">
+                            <img src="./Images/Icons/Settings/Complaint-icon.svg" alt="">
+                            <h5>Complaint</h5>
+                        </div>
+                        <!-- logout -->
+                        <div class="card" id="logout-opt">
+                            <img src="./Images/Icons/Settings/logout-icon.svg" alt="">
+                            <h5>Logout</h5>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Profile Section -->
+    <!-- Start Account Setting modal -->
+     <article class="account-setting-modal">
+        <div class="image">
+            <img src="./Images/Settings-avartar.png" alt="account avatar img">
+        </div>
+        <div class="change-photo">
+            <h3>Change Photo</h3>
+            <button type="button">
+                <img src="./Images/Icons/Settings/camera-icon.svg" alt="camera icon">
+            </button>
+        </div>
+        <div class="info">
+            <span class="card-info">
+                <h4>Address</h4>
+                <p>15 Talaat Harb, Street, Downtown, Cairo, Egypt</p>
+            </span>
+            <span class="card-info">
+                <h4>Phone Number</h4>
+                <p>0110000099</p>
+            </span>
+        </div>
+        <div class="action-btns">
+            <button type="button" id="cancel-btn">Cancel</button>
+            <button type="button" id="save-btn">Save</button>
+        </div>
+        <!-- Close Btn -->
+        <button class="close-btn">
+            <img src="./Images/Icons/close-btn-icon.svg" alt="close btn icon">
+        </button>
+     </article>
+    <!-- End Account Setting modal -->
+
+    <!-- Start Register Child Data Form modal -->
+     <article class="register-child-data-modal">
+        <main>
+            <h1>Register Child Data</h1>
+        </main>
+        <form>
+            <aside>
+                <div class="input-group">
+                    <input type="text" placeholder="Child's Name">
+                    <input type="text" placeholder="Guardian's Name">
+                </div>
+                <input type="number" placeholder="National Number">
+                <input type="number" placeholder="Child's age">
+                <input type="datetime" placeholder="Birth Date">
+                <input type="text" placeholder="Child Blood Type">
+                <input type="text" placeholder="child's health status">
+                <input type="text" placeholder="child's chronic diseases">
+                <h4>Gender</h4>
+                <div class="gender">
+                    <div>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </aside>
+            <input type="submit" value="Save" class="submit-btn">
+        </form>
+        <!-- Close Btn -->
+        <button class="close-btn">
+            <img src="./Images/Icons/close-btn-icon.svg" alt="close btn icon">
+        </button>
+     </article>
+    <!-- End Register Child Data Form modal -->
+
+    <!-- Start Complaint modal -->
+     <article class="complaint-modal">
+        <main>
+            <h1>Complaint</h1>
+        </main>
+        <form>
+            <input type="text" placeholder="the topic">
+            <textarea name="subject message" id="subject-message" placeholder="subject message"></textarea>
+            <div class="input-group">
+                <input type="text" placeholder="name">
+                <input type="text" placeholder="last name">
+            </div>
+            <div class="input-email">
+                <!-- email icon -->
+                 <div class="email-icon">
+                    <img src="./Images/Icons/Footer/mail-icon.svg" alt="email icon">
+                 </div>
+                <input type="email" placeholder="email">
+            </div>
+            <input type="submit" value="Send" class="submit-btn">
+        </form>
+        <!-- Close Btn -->
+        <button class="close-btn">
+            <img src="./Images/Icons/close-btn-icon.svg" alt="close btn icon">
+        </button>
+     </article>
+    <!-- End Complaint modal -->
+         <!-- Start Footer -->
+         <footer>
+            <div class="container">
+                <!-- About my baby -->
+                 <aside>
+                    <h4>About My Baby</h4>
+                    <p>
+                        Our platform provides expert guidance on children's 
+                        health and care, with tips, vaccination schedules, 
+                        and consultations to support healthy growth.
+                    </p>
+                    <div class="website-info">
+                        <!-- Mail Icon -->
+                        <div>
+                            <img src="./Images/Icons/Footer/mail-icon.svg" alt="mail icon">
+                        </div>
+                        <p>support@mybaby.com</p>
+                    </div>
+                    <div class="website-info">
+                        <!-- Mobile Icon -->
+                        <div>
+                            <img src="./Images/Icons/Footer/telephone.svg" alt="telephone icon">
+                        </div>
+                        <p>022125984</p>
+                    </div>
+                </aside>
+                <!-- Quick Links -->
+                <aside class="quick-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li>
+                            <!-- arrow icon -->
+                            <img src="./Images/Icons/Footer/arrow.svg" alt="arrow icon">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <!-- arrow icon -->
+                            <img src="./Images/Icons/Footer/arrow.svg" alt="arrow icon">
+                            <a href="vaccination.html">Vaccination</a>
+                        </li>
+                        <li>
+                            <!-- arrow icon -->
+                            <img src="./Images/Icons/Footer/arrow.svg" alt="arrow icon">
+                            <a href="consultation.html">Consultation</a>
+                        </li>
+                        <li>
+                            <!-- arrow icon -->
+                            <img src="./Images/Icons/Footer/arrow.svg" alt="arrow icon">
+                            <a href="health-unit.html">Health Unit</a>
+                        </li>
+                        <li>
+                            <!-- arrow icon -->
+                            <img src="./Images/Icons/Footer/arrow.svg" alt="arrow icon">
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <!-- arrow icon -->
+                            <img src="./Images/Icons/Footer/arrow.svg" alt="arrow icon">
+                            <a href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </aside>
+                <!-- Timing -->
+                <aside>
+                    <h4>Timing</h4>
+                    <ul>
+                        <li>
+                            SUN: 7AM - 1PM
+                        </li>
+                        <li>
+                            MON: 9AM - 1PM
+                        </li>
+                        <li>
+                            TUE: 8AM - 1PM
+                        </li>
+                        <li>
+                            TUE: 8AM - 1PM
+                        </li>
+                    </ul>
+                </aside>
+                <!-- Social Media -->
+                <aside>
+                    <h4>Follow My Baby On Social Media</h4>
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <img src="./Images/Icons/Footer/facebook.svg" alt="facebook icon">
+                        <img src="./Images/Icons/Footer/instagram.svg" alt="instagram icon">
+                        <img src="./Images/Icons/Footer/tiktok.svg" alt="tiktok icon">
+                    </div>
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="./Images/Logo.png" alt="logo">
+                    </div>
+                </aside>
+            </div>
+        </footer>
+    <!-- End Footer -->
+
+    <!-- navbar toggle -->
+    <script src="./js/navbar.js"></script>
+    <!-- Setting toggle -->
+    <script src="js/setting.js"></script>
+</body>
+</html>
