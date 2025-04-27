@@ -1,0 +1,209 @@
+/* 
+variables 
+*/
+:root {
+    --main-color: #e6f1f7;
+    --text-color: #044973;
+    --button-color: #43d2ff;
+    --white: #fff;
+    --black: #000;
+    --border-color: #ccc;
+    --main-radius: 20px;
+    --circle-radius: 50%;
+    --main-transition: 0.3s;
+  }
+  /* 
+  elements 
+  */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Poppins', serif;
+  }
+    /* 
+    Headers 
+  */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: calc(100% - 280px);
+    background-color: var(--main-color);
+    border-radius: var(--main-radius);
+    margin-left: auto;
+    margin-right: 40px;
+    padding-inline: 30px;
+  }
+  header > main {
+    color: var(--text-color);
+  }
+  header > form {
+    position: relative;
+  }
+  header > form > input {
+    width: 450px;
+    background-color: var(--main-color);
+    border: 1px solid var(--black);
+    outline: none;
+    padding: 8px 50px;
+    border-radius: var(--main-radius);
+  }
+  header > form > img {
+    position: absolute;
+    left: 30px;
+    top: calc(50% - 12px);
+    transform: translateX(-50%);
+  }
+  /* Sidebar */
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sidebar> ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+}
+.sidebar> ul > li  {
+    width: 100%;
+}
+.sidebar> ul > li > .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar> ul > li > a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid var(--text-color);
+    padding: 8px;
+    transition: var(--main-transition);
+    display: flex;
+    align-items: center;
+}
+.sidebar> ul > li > a:hover {
+    background-color: var(--text-color);
+    color: var(--white);
+}
+.sidebar> ul > li > a > .icon {
+    margin-right: 10px;
+}
+/* doctor Table */
+.doctor-article {
+  background-color: var(--main-color);
+  width: calc(100% - 280px);
+  height: 100%;
+  margin: 20px 40px 0 auto;
+  padding: 20px;
+  border-radius: var(--main-radius);
+}
+
+.doctor-article h1 {
+  color: var(--text-color);
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.doctor-article table {
+  width: 100%;
+  border-bottom: 2px solid var(--white);
+}
+
+.doctor-article thead,
+.doctor-article th {
+  color: var(--text-color);
+  padding: 15px 10px;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 2px solid var(--white);
+}
+
+.doctor-article tbody#doctorTableBody tr {
+  /* border-bottom: 1px solid var(--white); */
+  /* transition: background-color 0.3s ease; */
+  text-align: center;
+}
+
+.doctor-article tbody#doctorTableBody tr:last-child {
+  border-bottom: none;
+}
+
+/* .doctor-article tbody#doctorTableBody tr:hover {
+  background-color: var(--border-color);
+} */
+
+.doctor-article td {
+  padding: 12px 10px;
+}
+
+.doctor-article .edit-btn,
+.doctor-article .delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all var(--main-transition);
+}
+
+.doctor-article .edit-btn {
+  background-color: var(--button-color);
+  color: var(--white);
+  margin-right: 5px;
+}
+
+.doctor-article .delete-btn {
+  background-color: #ff4343;
+  color: var(--white);
+}
+
+.doctor-article .edit-btn:hover {
+  background-color: #2ab5e0;
+}
+
+.doctor-article .delete-btn:hover {
+  background-color: #e03a3a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .doctor-article {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .doctor-article table {
+    font-size: 0.9rem;
+  }
+  
+  .doctor-article .edit-btn,
+  .doctor-article .delete-btn {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+}

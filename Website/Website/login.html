@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Main css -->
+    <link rel="stylesheet" href="/css/login.css">
+    <!-- Normalize Css -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- Start Navbar -->
+    <header>
+        <!-- Container -->
+        <div class="container">
+            <nav>
+                <!-- logo -->
+                <div class="logo">
+                    <img src="./Images/Logo.png" alt="logo img">
+                </div>
+                <div class="menu">
+                    <!-- links -->
+                    <ul class="menu-links">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="vaccination.html">Vaccination</a>
+                        </li>
+                        <li>
+                            <a href="consultation.html">Consultation</a>
+                        </li>
+                        <li>
+                            <a href="health-unit.html">Health Unit</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                        <button class="close-menu-btn">x</button>
+                    </ul>
+                    <!-- Mobile Menu -->
+                    <ul class="mobile-menu">
+                        <li>
+                            <button class="mobile-menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Icons -->
+                    <ul class="menu-icons">
+                        <!-- Notification -->
+                        <li>
+                            <a href="">
+                                <img src="./Images/Icons/mdi_bell-ring.svg" alt="notification img">
+                            </a>
+                        </li>
+                        <!-- Settings -->
+                        <li>
+                            <a href="./settings.html">
+                                <img src="./Images/Icons/weui_setting-filled.svg" alt="settings img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- overlay -->
+        <div class="overlay"></div>
+    </header>
+    <!-- Start Login -->
+    <div class="container">
+        <section class="login-container">
+                <!-- Register form -->
+                 <aside class="register-form">
+                    <main>
+                        <h1>Create Account <br> As a User</h1>
+                        <p>Login using social media</p>
+                    </main>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" placeholder="first name">
+                            <input type="text" placeholder="last name">
+                        </div>
+                        <input type="number" placeholder="National Number">
+                        <input type="text" placeholder="Address">
+                        <input type="number" placeholder="Phone Number">
+                        <input type="datetime" placeholder="Birth Date">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Confirm Password">
+                        <input class="submit" type="submit" value="Sign Up">
+                    </form>
+                 </aside>
+                <!-- login form -->
+                 <aside class="login-form">
+                    <main>
+                        <h1>Login As a User</h1>
+                        <p>Login using social Networks</p>
+                    </main>
+                    <form>
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <!-- forget password -->
+                         <button class="forget-password-btn" type="button">Forget Password ?</button>
+                         <input class="submit" type="submit" value="Login">
+                         <button type="button" class="login-as-btn">
+                            <span>
+                                <!-- Doctor icon -->
+                                <img src="./Images/Icons/Login/doctor-login.svg" alt="doctor icon">
+                                <p>Login As a Doctor</p>
+                            </span>
+                         </button>
+                    </form>
+                 </aside>
+                <!-- Slider Toggle -->
+                 <!-- left -->
+                 <aside class="slider-toggle left">
+                    <main>
+                        <h1>New Here ?</h1>
+                        <p>Sign up And Discover A Great <br> Amount of New Opportunities</p>
+                    </main>
+                    <button id="sign-up-btn" type="button">Sign Up</button>
+                 </aside>
+                 <!-- right -->
+                 <aside class="slider-toggle right">
+                    <main>
+                        <h1>Welcome Back</h1>
+                        <p>To Keep Connected With us Please <br> Login with Your Personal Info</p>
+                    </main>
+                    <button id="login-btn" type="button">Login</button>
+                 </aside>
+            </section>
+        </div>
+    <!-- End Login -->
+    <!-- Start Footer -->
+        <footer>
+            <div class="container">
+                <!-- About my baby -->
+                 <aside>
+                    <h4>About My Baby</h4>
+                    <p>
+                        Our platform provides expert guidance on children's 
+                        health and care, with tips, vaccination schedules, 
+                        and consultations to support healthy growth.
+                    </p>
+                    <div class="website-info">
+                        <!-- Mail Icon -->
+                        <div>
+                            <img src="./Images/Icons/Footer/mail-icon.svg" alt="mail icon">
+                        </div>
+                        <p>support@mybaby.com</p>
+                    </div>
+                    <div class="website-info">
+                        <!-- Mobile Icon -->
+                        <div>
+                            <img src="./Images/Icons/Footer/telephone.svg" alt="telephone icon">
+                        </div>
+                        <p>022125984</p>
+                    </div>
+                </aside>
+                <!-- Quick Links -->
+                <aside class="quick-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li>
+                            <!-- arrow icon -->
+                            <img src="./Images/Icons/Footer/arrow.svg" alt="arrow icon">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <!-- arrow icon -->
+                            <img src="./Images/Icons/Footer/arrow.svg" alt="arrow icon">
+                            <a href="vaccination.html">Vaccination</a>
+                        </li>
+                        <li>
+                            <!-- arrow icon -->
+                            <img src="./Images/Icons/Footer/arrow.svg" alt="arrow icon">
+                            <a href="consultation.html">Consultation</a>
+                        </li>
+                        <li>
+                            <!-- arrow icon -->
+                            <img src="./Images/Icons/Footer/arrow.svg" alt="arrow icon">
+                            <a href="health-unit.html">Health Unit</a>
+                        </li>
+                        <li>
+                            <!-- arrow icon -->
+                            <img src="./Images/Icons/Footer/arrow.svg" alt="arrow icon">
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <!-- arrow icon -->
+                            <img src="./Images/Icons/Footer/arrow.svg" alt="arrow icon">
+                            <a href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </aside>
+                <!-- Timing -->
+                <aside>
+                    <h4>Timing</h4>
+                    <ul>
+                        <li>
+                            SUN: 7AM - 1PM
+                        </li>
+                        <li>
+                            MON: 9AM - 1PM
+                        </li>
+                        <li>
+                            TUE: 8AM - 1PM
+                        </li>
+                        <li>
+                            TUE: 8AM - 1PM
+                        </li>
+                    </ul>
+                </aside>
+                <!-- Social Media -->
+                <aside>
+                    <h4>Follow My Baby On Social Media</h4>
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <img src="./Images/Icons/Footer/facebook.svg" alt="facebook icon">
+                        <img src="./Images/Icons/Footer/instagram.svg" alt="instagram icon">
+                        <img src="./Images/Icons/Footer/tiktok.svg" alt="tiktok icon">
+                    </div>
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="./Images/Logo.png" alt="logo">
+                    </div>
+                </aside>
+            </div>
+        </footer>
+    <!-- End Footer -->
+    <!-- Navbar Toggle -->
+    <script src="./js/navbar.js"></script>
+    <!-- Login Toggle Slider -->
+     <script src="./js/login.js"></script>
+</body>
+</html>
