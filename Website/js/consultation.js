@@ -1,4 +1,7 @@
 // Doctors Info And Details
+/*
+    Start Our Doctor Section
+*/ 
 const carouselSlide = document.querySelector('.carousel-slide');
 const closeBtns = document.querySelector('article.appointment-modal > .close-btn');
 
@@ -41,6 +44,11 @@ function renderDoctorCards(count = 9) {
 }
 
 renderDoctorCards(3);
+
+
+/*
+    End Our Doctor Section
+*/ 
 
 // Appointment Modal
 const appointmentModal = document.querySelector('.appointment-modal');
