@@ -9,17 +9,17 @@ const doctors = [
     {
         name: 'Dr. Mariem Omar',
         info: 'Consultant pediatrician and nutritionist<br>10 years of experience in children\'s <br> health care',
-        image: '../Images/doctor1.png', 
+        image: './Images/doctor1.png', 
     },
     {
         name: 'Dr. Amr Mohamed',
         info: 'Consultant pediatrician and nutritionist<br>10 years of experience in children\'s <br> health care',
-        image: '../Images/doctor2.png', 
+        image: './Images/doctor2.png', 
     },
     {
         name: 'Dr. Ahmed Mahmoud',
         info: 'Consultant pediatrician and nutritionist<br>10 years of experience in children\'s <br> health care',
-        image: '../Images/doctor3.png', 
+        image: './Images/doctor3.png', 
     }
 ];
 
